@@ -1,9 +1,22 @@
-import { styled } from "@mui/material/styles";
+import HomeIcon from "@mui/icons-material/Home";
+import SearchIcon from "@mui/icons-material/Search";
 
-const DesktopSidebarRoot = styled("div")(({ theme }) => ({
-  gridArea: "sidebar",
-}));
+import {
+  DesktopSidebarRoot,
+  NavigationButton,
+  NavigationList,
+} from "./styledComponents";
+import { LibraryMenu } from "./@DesktopSidebar/LibraryMenu";
 
 export const DesktopSidebar = () => {
-  return <DesktopSidebarRoot>DesktopSidebar</DesktopSidebarRoot>;
+  return (
+    <DesktopSidebarRoot>
+      <NavigationList>
+        <NavigationButton startIcon={<HomeIcon />}>Home</NavigationButton>
+        <NavigationButton startIcon={<SearchIcon />}>Search</NavigationButton>
+      </NavigationList>
+
+      <LibraryMenu />
+    </DesktopSidebarRoot>
+  );
 };
