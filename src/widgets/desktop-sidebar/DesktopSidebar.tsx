@@ -6,7 +6,7 @@ import {
   NavigationButton,
   NavigationList,
 } from "./styledComponents";
-import { LibraryMenu } from "./@DesktopSidebar/LibraryMenu";
+import { LibraryMenu } from "./@DesktopSidebar/library-menu/LibraryMenu";
 
 export const DesktopSidebar = () => {
   return (
