@@ -4,4 +4,5 @@ export interface LibraryItem {
   title: string;
   type: string;
   author: string;
+  isPlaying?: boolean;
 }

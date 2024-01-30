@@ -1,1 +1,1 @@
-export * from "./PlayerBar";
+export { PlayerBarController as PlayerBar } from "./PlayerBarController";
