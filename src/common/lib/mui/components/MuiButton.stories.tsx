@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Button from "@mui/material/Button";
 
 const meta = {
-  title: "MuiComponents/Button",
+  title: "Mui Components/Button",
   component: Button,
   parameters: {
     layout: "centered",

@@ -5,6 +5,7 @@ export const MuiChip: Components["MuiChip"] = {
     root: {
       backgroundColor: "#282828",
       cursor: "pointer",
+      userSelect: "none",
       "&:hover": {
         backgroundColor: "#313131",
       },

@@ -6,7 +6,7 @@ import {
   NavigationButton,
   NavigationList,
 } from "./styledComponents";
-import { LibraryMenu } from "./@DesktopSidebar/library-menu/LibraryMenu";
+import { YourLibrary } from "./@DesktopSidebar/your-library";
 
 export const DesktopSidebar = () => {
   return (
@@ -16,7 +16,7 @@ export const DesktopSidebar = () => {
         <NavigationButton startIcon={<SearchIcon />}>Search</NavigationButton>
       </NavigationList>
 
-      <LibraryMenu />
+      <YourLibrary />
     </DesktopSidebarRoot>
   );
 };

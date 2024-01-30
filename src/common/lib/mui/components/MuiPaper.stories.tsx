@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Paper from "@mui/material/Paper";
 
 const meta = {
-  title: "MuiComponents/Paper",
+  title: "Mui Components/Paper",
   component: Paper,
   parameters: {
     layout: "centered",
