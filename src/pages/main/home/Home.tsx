@@ -1,12 +1,5 @@
-import { styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
-
 import { Header } from "src/common/ui-kit/header";
-
-const HomeRoot = styled(Paper)(({ theme }) => ({
-  width: "100%",
-  height: "100%",
-}));
+import { HomeRoot, HomeFilter, FilterChip } from "./Home.style";
 
 type Props = {};
 
@@ -15,8 +8,13 @@ export const Home = ({}: Props) => {
     <HomeRoot>
       <div>
         <Header />
-        <div></div>
+        <HomeFilter>
+          <FilterChip label="All" className="active" />
+          <FilterChip label="Music" />
+          <FilterChip label="Podcast" />
+        </HomeFilter>
       </div>
+
       <main></main>
     </HomeRoot>
   );
