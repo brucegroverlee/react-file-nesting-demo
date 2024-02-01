@@ -5,6 +5,7 @@ import Chip from "@mui/material/Chip";
 export const HomeRoot = styled(Paper)({
   width: "100%",
   height: "100%",
+  position: "relative",
 });
 
 export const HomeFilter = styled("div")(({ theme }) => ({
@@ -19,4 +20,10 @@ export const FilterChip = styled(Chip)(({ theme }) => ({
     backgroundColor: theme.palette.common.white,
     color: theme.palette.common.black,
   },
+}));
+
+export const HomeMain = styled("main")(({ theme }) => ({
+  padding: theme.spacing(3),
+  display: "flex",
+  flexDirection: "column",
 }));

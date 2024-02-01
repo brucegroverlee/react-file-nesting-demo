@@ -1,21 +1,27 @@
 import { Header } from "src/common/ui-kit/header";
-import { HomeRoot, HomeFilter, FilterChip } from "./Home.style";
+import { Playlist } from "src/common/models/playlists/Playlist";
 
-type Props = {};
+import { HomeRoot, HomeFilter, FilterChip, HomeMain } from "./Home.style";
+import { Shortcuts } from "./@Home/Shortcuts";
 
-export const Home = ({}: Props) => {
-  return (
-    <HomeRoot>
-      <div>
-        <Header />
-        <HomeFilter>
-          <FilterChip label="All" className="active" />
-          <FilterChip label="Music" />
-          <FilterChip label="Podcast" />
-        </HomeFilter>
-      </div>
-
-      <main></main>
-    </HomeRoot>
-  );
+type Props = {
+  loading: boolean;
+  shortcuts: Playlist[];
 };
+
+export const Home = ({ loading, shortcuts }: Props) => (
+  <HomeRoot>
+    <div>
+      <Header />
+      <HomeFilter>
+        <FilterChip label="All" className="active" />
+        <FilterChip label="Music" />
+        <FilterChip label="Podcast" />
+      </HomeFilter>
+    </div>
+
+    <HomeMain>
+      <Shortcuts shortcuts={shortcuts} />
+    </HomeMain>
+  </HomeRoot>
+);
