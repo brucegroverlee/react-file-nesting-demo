@@ -3,6 +3,7 @@ import { Playlist } from "src/common/models/playlists/Playlist";
 
 import { HomeRoot, HomeFilter, FilterChip, HomeMain } from "./Home.style";
 import { Shortcuts } from "./@Home/Shortcuts";
+import { HomeSection } from "./@Home/HomeSection";
 
 type Props = {
   loading: boolean;
@@ -22,6 +23,7 @@ export const Home = ({ loading, shortcuts }: Props) => (
 
     <HomeMain>
       <Shortcuts shortcuts={shortcuts} />
+      <HomeSection />
     </HomeMain>
   </HomeRoot>
 );
