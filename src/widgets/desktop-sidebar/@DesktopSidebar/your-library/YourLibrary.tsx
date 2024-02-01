@@ -13,7 +13,7 @@ import {
   LibraryFilter,
   YourLibraryHeader,
   TitleButton,
-} from "./styledComponents";
+} from "./YourLibrary.style";
 import { LibraryItem } from "./@YourLibrary/LibraryItem";
 import { LibraryItem as LibraryItemModel } from "./model/LibraryItem";
 import { LibrarySkeleton } from "./@YourLibrary/LibrarySkeleton";

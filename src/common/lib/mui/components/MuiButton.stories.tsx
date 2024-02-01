@@ -21,5 +21,5 @@ export const VariantText: Story = {
   args: {
     variant: "text",
   },
-  render: (props) => <Button {...props}>Text</Button>,
+  render: (props) => <Button {...props}>Button Text</Button>,
 };

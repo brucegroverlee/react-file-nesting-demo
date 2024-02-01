@@ -5,7 +5,7 @@ import {
   DesktopSidebarRoot,
   NavigationButton,
   NavigationList,
-} from "./styledComponents";
+} from "./DesktopSidebar.style";
 import { YourLibrary } from "./@DesktopSidebar/your-library";
 
 export const DesktopSidebar = () => {

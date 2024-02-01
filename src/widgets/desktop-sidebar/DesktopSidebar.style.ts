@@ -20,6 +20,7 @@ export const NavigationList = styled(Paper)(({ theme }) => ({
 export const NavigationButton = styled(Button)({
   justifyContent: "flex-start",
 });
+
 NavigationButton.defaultProps = {
   variant: "text",
   fullWidth: true,
