@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import Button from "@mui/material/Button";
 
 export const DesktopSidebarRoot = styled("nav")(({ theme }) => ({
   gridArea: "sidebar",
@@ -16,12 +15,3 @@ export const NavigationList = styled(Paper)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "flex-start",
 }));
-
-export const NavigationButton = styled(Button)({
-  justifyContent: "flex-start",
-});
-
-NavigationButton.defaultProps = {
-  variant: "text",
-  fullWidth: true,
-};
