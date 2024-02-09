@@ -10,7 +10,7 @@ type Props = {
   shortcuts: Playlist[];
 };
 
-export const Home = ({ loading, shortcuts }: Props) => (
+export const Home = ({ shortcuts }: Props) => (
   <HomeRoot>
     <div>
       <Header />

@@ -19,9 +19,9 @@ const DesktopLayoutGrid = styled("div")(({ theme }) => ({
   padding: theme.spacing(2),
 }));
 
-const DesktopLayoutMainView = styled("div")(({ theme }) => ({
+const DesktopLayoutMainView = styled("div")({
   gridArea: "main-view",
-}));
+});
 
 type Props = {
   children: ReactNode;

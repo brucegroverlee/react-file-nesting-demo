@@ -27,7 +27,7 @@ type Props = {
 };
 
 export const PlayerBarProvider = ({ children }: Props) => {
-  const [playerState, setPlayerState] = useState(initValue);
+  const [playerState] = useState(initValue);
 
   // TODO: Implement the player bar logic
 

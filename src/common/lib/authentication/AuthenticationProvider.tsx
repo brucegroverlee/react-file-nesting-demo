@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const AuthenticationProvider = ({ children }: Props) => {
-  const [authentication, setAuthentication] = useState({
+  const [authentication] = useState({
     isAuthenticated: false,
     user: {
       name: "Bruce Grover Lee",
