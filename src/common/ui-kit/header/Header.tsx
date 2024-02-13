@@ -9,12 +9,14 @@ import {
   ProfileButton,
   ProfilePicture,
 } from "./Header.style";
+import { SeachForm, Props as SearchProps } from "./@Header/SeachForm";
 
 type Props = {
   profilePicture: string | null;
+  search?: SearchProps;
 };
 
-export const Header = ({ profilePicture }: Props) => (
+export const Header = ({ profilePicture, search }: Props) => (
   <HeaderRoot>
     <Stack flexDirection="row" gap={2}>
       <HeaderIconButton>
@@ -24,6 +26,8 @@ export const Header = ({ profilePicture }: Props) => (
       <HeaderIconButton>
         <ChevronRightIcon />
       </HeaderIconButton>
+
+      {search && <SeachForm {...search} />}
     </Stack>
 
     <Stack flexDirection="row" gap={2}>

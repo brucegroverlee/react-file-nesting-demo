@@ -5,6 +5,7 @@ import { RouteObject } from "react-router-dom";
 import { MainRouterRoot } from "./MainRouterRoot";
 
 const HomePage = lazy(() => import("../../pages/main/home"));
+const SearchPage = lazy(() => import("../../pages/main/search/index"));
 
 export const MainRouter: RouteObject[] = [
   {
@@ -20,7 +21,7 @@ export const MainRouter: RouteObject[] = [
         children: [
           {
             index: true,
-            element: <div>Search</div>,
+            element: <SearchPage />,
           },
           {
             path: ":term",

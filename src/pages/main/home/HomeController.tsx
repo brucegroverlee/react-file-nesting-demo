@@ -1,5 +1,5 @@
 import { Home } from "./Home";
-import { useHome } from "./model/useHome";
+import { useHome } from "./useHome";
 
 export const HomeController = () => {
   const { isLoading, shortcuts } = useHome();

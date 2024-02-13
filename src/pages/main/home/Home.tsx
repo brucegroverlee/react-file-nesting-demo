@@ -1,7 +1,7 @@
-import { Header } from "src/common/ui-kit/header";
+import { PageContainer, Header } from "src/common/ui-kit";
 import { Playlist } from "src/common/models/playlists/Playlist";
 
-import { HomeRoot, HomeFilter, FilterChip, HomeMain } from "./Home.style";
+import { HomeFilter, FilterChip, HomeMain } from "./Home.style";
 import { Shortcuts } from "./@Home/Shortcuts";
 import { HomeSection } from "./@Home/HomeSection";
 
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Home = ({ shortcuts }: Props) => (
-  <HomeRoot>
+  <PageContainer>
     <div>
       <Header />
       <HomeFilter>
@@ -25,5 +25,5 @@ export const Home = ({ shortcuts }: Props) => (
       <Shortcuts shortcuts={shortcuts} />
       <HomeSection />
     </HomeMain>
-  </HomeRoot>
+  </PageContainer>
 );
