@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { LibraryItem } from "./LibraryItem";
 import { PlayerTrack } from "src/widgets/player-bar/model/PlayerTrack";
 
