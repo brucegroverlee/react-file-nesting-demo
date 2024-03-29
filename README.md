@@ -7,6 +7,10 @@
 
 Welcome to the official demonstration repository of the Domain-Fractal React Architecture (DFRA), a new approach to structuring React applications for scalability, maintainability, and ease of development. DFRA blends the concepts of `domain-driven` design with a `fractal project structure`, aiming to streamline the development process for large-scale applications by clearly separating concerns and promoting modular growth.
 
+## Post
+
+https://medium.com/@brucegroverlee/domain-fractal-react-architecture-dfra-b959313c7a3f
+
 ## Getting Started
 
 Clone the repository to dive into the DFRA Spotify Clone:
